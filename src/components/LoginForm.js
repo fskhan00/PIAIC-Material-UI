@@ -5,6 +5,7 @@ import { Autorenew } from "@material-ui/icons";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import Checkbox from "@material-ui/core/Checkbox";
+import BarChart from "./barChart";
 
 const useStyles = makeStyles((theme) =>
   createStyles({
@@ -30,7 +31,7 @@ export function LoginForm() {
 
   return (
     <div className={classes.root}>
-      <Paper elevation={3} className={classes.paper}>
+      {/* <Paper elevation={3} className={classes.paper}>
         <h1>Login</h1>
         <form className={classes.root} noValidate autoComplete="off">
           <TextField label="Email" className={classes.input} />
@@ -44,7 +45,8 @@ export function LoginForm() {
             Submit
           </Button>
         </form>
-      </Paper>
+      </Paper> */}
+      <BarChart />
     </div>
   );
 }
